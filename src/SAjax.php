@@ -32,7 +32,7 @@ class SAjax {
 		$this->name = $name;
 		$this->addScriptPath();
 		if ( is_callable( $callback ) ) {
-			SAjaxActions::wpAjax( $name, $callback() );
+			SAjaxActions::wpAjax( $name, $callback );
 		} else {
 			SAjaxActions::wpAjax( $name, [ $this, 'handler' ] );
 		}
