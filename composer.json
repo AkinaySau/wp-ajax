@@ -1,0 +1,23 @@
+{
+  "name": "sau/wp-ajax",
+  "license": "MIT",
+  "homepage": "http://a-sau.ru",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "AkinaySau",
+      "role": "Developer",
+      "email": "akinaysau@gmail.com",
+      "homepage": "http://a-sau.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Sau\\WP\\Ajax\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7",
+    "sau/library": "1.0.*"
+  }
+}
