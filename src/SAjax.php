@@ -64,5 +64,22 @@ class SAjax {
 		}, 1 );
 	}
 
+	/**
+	 * Generate response json
+	 *
+	 * @param boolean $status Status response
+	 * @param mixed   $data   Custom data
+	 * @param array   $args   Array arguments for add in response before converted to json
+	 *
+	 * @return string
+	 */
+	public static function response( bool $status = false, $data = null, array $args = [] ): string {
+		$return = array_merge( [
+			'status' => (int) $status,
+			'data'   => $data
+		], $args );
+
+		return json_encode( $return );
+	}
 
 }
